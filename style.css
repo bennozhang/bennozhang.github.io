@@ -1,0 +1,153 @@
+*{
+    font-family: 'Akatab';font-size: 22px;
+}
+
+.icon h1{
+    color:rgb(84, 13, 151);
+    margin: 10px;
+    text-align: center;
+
+    font-weight:bold ;
+    font-size:100%;
+
+}
+
+header{
+    background-color: #096a88;
+    padding: 10px 0;
+    
+}
+
+nav ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+
+}
+
+nav ul li {
+    margin:0 15px;
+}
+nav ul li a{
+    color:aliceblue;
+    text-decoration:none;
+    font-size: 20px;
+    
+}
+
+
+.icon {
+    text-align: center;
+    padding: 10px 12px;
+    background-color: antiquewhite;
+    z-index:2;
+
+}
+.icon h1{
+    font-size: 57px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+p{
+    font-size:20px;
+    margin: 12px 0;
+}
+
+.car-listings{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.car-item{
+    background-color: #0faedf;
+    border:10px solid rgba(62, 91, 219, 0.301);
+    border-radius: 5%;
+    margin: 10px;
+    padding: 20px 10px 10px 10px;
+    text-align:center;
+    width:25%;
+    transition:transform 1s;
+}
+
+.car-item img {
+    width : 90%;
+    height:auto;
+    border-radius: 10%;
+}
+
+.car-item img:hover{
+    transform:scale(1.05)
+}
+
+.car-item p{
+    color:blue
+}
+
+/* Updated price styling */
+.car-item p{
+    color: white;
+    background-color: #096a88;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+
+/* Tablet Screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .icon h1 {
+        font-size: 40px;
+    }
+
+    .car-item {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 480px) {
+    .icon h1 {
+        font-size: 30px;
+    }
+
+    .car-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
